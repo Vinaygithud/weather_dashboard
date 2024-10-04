@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #f9f9f9, #e5e5e5);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col-md-6 {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+  
+  .col-md-12 {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+  
+  #weather-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #weather-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #weather-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #forecast-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #forecast-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #forecast-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #forecast-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #forecast-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #map-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #map-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 20px auto;
+    }
+    #weather-info, #forecast-info, #map-info {
+      margin-bottom: 10px;
+    }
+  }
